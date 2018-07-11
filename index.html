@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/dragandrop.css" />
 	</head>
 	<body class="is-preload">
 
@@ -132,10 +133,10 @@
 					</div>
 
 				<!-- Contact -->
-					<section id="contact">
+					<section id="contact" >
 						<div class="inner">
-							<section>
-								<form method="post" action="#">
+							<section id="contact-drop-1">
+								<form  id="contact-form" method="post" action="#" draggable="true">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -156,30 +157,36 @@
 									</ul>
 								</form>
 							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
+							<section id="contact-drop-2"  class="split">
+
+								<div id="contact-info" draggable="true">
+
+									<section>
+										<div class="contact-method">
+											<span class="icon alt fa-envelope"></span>
+											<h3>Email</h3>
+											<a href="#">information@untitled.tld</a>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon alt fa-phone"></span>
+											<h3>Phone</h3>
+											<span>(000) 000-0000 x12387</span>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon alt fa-home"></span>
+											<h3>Address</h3>
+											<span>1234 Somewhere Road #5432
+												<br /> Nashville, TN 00000
+												<br /> United States of America</span>
+										</div>
+									</section>
+
+								</div>
+
 							</section>
 						</div>
 					</section>
@@ -210,6 +217,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/draganddrop.js"></script>
 	</body>
 </html>
